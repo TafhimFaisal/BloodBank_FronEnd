@@ -8,7 +8,7 @@
         </div>
         
         <div class="lockscreen-footer text-center">
-          Copyright &copy; 2019-3019 <b><a href="https://brainstation-23.com/" class="text-black">BrainStation-23.com</a></b><br>
+          Copyright &copy; 2019-3019 <b><a href="#" class="text-black">BloodBank.com</a></b><br>
           All rights reserved
         </div>
     </div>

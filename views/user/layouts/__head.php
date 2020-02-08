@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
 
-  <title>BrainStation 23 | BloodBank</title>
+  <title>BloodBank</title>
   <link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="http://<?=$_SERVER['HTTP_HOST']?>/dist/css/adminlte.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">

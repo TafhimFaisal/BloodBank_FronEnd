@@ -1,7 +1,7 @@
 let frontEnd_base_url ='';
-let api_base_url = "http://www.bs23bloodbank.api";
-let admin_pannel_url = "http://www.bs23bloodbank.admin";
-let user_pannel_url = "http://www.bs23bloodbank.com";
+let api_base_url = "http://www.bloodbank.api";
+let admin_pannel_url = "http://www.bloodbank.admin";
+let user_pannel_url = "http://www.bloodbank.com";
 var token = $.cookie('token');
 
 $('document').ready(function(){

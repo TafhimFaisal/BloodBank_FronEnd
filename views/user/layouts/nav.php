@@ -3,8 +3,8 @@
       <div class="container">
         
         <a href="http://<?=$_SERVER['HTTP_HOST']?>/views/user/index.php" class="navbar-brand">
-          <img src="http://<?=$_SERVER['HTTP_HOST']?>/dist/img/bs-logo.png" alt="BrainStation-23 Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-          <span class="brand-text font-weight-light">BrainStation-23 BloodBank</span>
+          <!-- <img src="http://<?=$_SERVER['HTTP_HOST']?>/dist/img/bs-logo.png" alt="BrainStation-23 Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
+          <span class="brand-text font-weight-light">BloodBank</span>
         </a>
 
         <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">

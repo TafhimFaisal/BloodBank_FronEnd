@@ -1,6 +1,6 @@
 # Project description :
 
-**BloodBank BrainStation-23**
+**BloodBank**
 
 this project was build to help the HR of BS 23 to store bloodGroups and location of an employe.
 so that in emergency when any of employee needs blood of specific type then HR could call out for help 
@@ -27,33 +27,32 @@ to that employee of having that specific blood type.
 
 1. **clone both projects from the link given below:**
 
-    
-    > [Click hear for `Api` project](https://gitlab.com/tafhim.chowdhury/bs23_bloodbank_api)  <br>
-    > [Click hear for `FrontEnd` project](https://gitlab.com/tafhim.chowdhury/bs23_bloodbank_frontend) 
+    > [Click hear for `Api` project](https://github.com/TafhimFaisal/BloodBank_api)  <br>
+    > [Click hear for `FrontEnd` project](https://github.com/TafhimFaisal/BloodBank_FronEnd) 
         
     > In `/var/www/html/` folder 
 
 2. **create two file three file named**  
 
-    - BS23BloodBank.admin.conf
-	- BS23BloodBank.api.conf
-	- BS23BloodBank.conf
+    - BloodBank.admin.conf
+	- BloodBank.api.conf
+	- BloodBank.conf
 
     >In `etc/nginx/sites-available/` folder
 
 3. **Pest the code below in the file accordingly:**
  
-    * **BS23BloodBank.admin.conf:**
+    * **BloodBank.admin.conf:**
 
         ```
         server {
             
             listen 80; 
             
-            root /var/www/html/bs23_bloodbank_frontend/;
+            root /var/www/html/bloodbank_frontend/;
             index index.html index.htm index.php admin-login.php;
             
-            server_name BS23BloodBank.admin www.BS23BloodBank.admin; 
+            server_name BloodBank.admin www.BloodBank.admin; 
             
             
             
@@ -73,17 +72,17 @@ to that employee of having that specific blood type.
             }
         }	
         ```
-    * **BS23BloodBank.api.conf:**
+    * **BloodBank.api.conf:**
 
         ```
         server {
             
             listen 80; 
             
-            root /var/www/html/bs23_bloodbank_api/public/;
+            root /var/www/html/bloodbank_api/public/;
             index index.html index.htm index.php;
             
-            server_name BS23BloodBank.api www.BS23BloodBank.api; 
+            server_name BloodBank.api www.BloodBank.api; 
 
             location / {
                 try_files $uri $uri/ /index.php?$query_string;
@@ -102,17 +101,17 @@ to that employee of having that specific blood type.
         }
 
         ```
-    * **BS23BloodBank.conf:**
+    * **BloodBank.conf:**
 
         ```
         server {
             
             listen 80; 
             
-            root /var/www/html/bs23_bloodbank_frontend/;
+            root /var/www/html/bloodbank_frontend/;
             index index.html index.htm index.php user-login.php;
             
-            server_name BS23BloodBank.com www.BS23BloodBank.com; 
+            server_name BloodBank.com www.BloodBank.com; 
             
             location / {
                 try_files $uri $uri/ /index.php?$query_string;
@@ -133,23 +132,23 @@ to that employee of having that specific blood type.
         ```
 4. **Run this code below :**
 
-    - sudo ln -s /etc/nginx/sites-available/BS23BloodBank.conf /etc/nginx/sites-enabled
-    - sudo ln -s /etc/nginx/sites-available/BS23BloodBank.admin.conf /etc/nginx/sites-enabled
-    - sudo ln -s /etc/nginx/sites-available/BS23BloodBank.api.conf /etc/nginx/sites-enabled
+    - sudo ln -s /etc/nginx/sites-available/BloodBank.conf /etc/nginx/sites-enabled
+    - sudo ln -s /etc/nginx/sites-available/BloodBank.admin.conf /etc/nginx/sites-enabled
+    - sudo ln -s /etc/nginx/sites-available/BloodBank.api.conf /etc/nginx/sites-enabled
     
     <br>
 5. **Run `sudo nano /etc/hosts` and** 
 
-	- *`your ip`*     www.BS23BloodBank.api
-    - *`your ip`*     www.BS23BloodBank.com
-    - *`your ip`*     www.BS23BloodBank.admin
+	- *`your ip`*     www.BloodBank.api
+    - *`your ip`*     www.BloodBank.com
+    - *`your ip`*     www.BloodBank.admin
 
     <br>
 6. **give permission to the folder to the folder** 
 
 	- sudo chmod -R 755 /var/www/html/
 	- sudo chown -R $USER:$USER /var/www/html/
-	- sudo chown -R $USER:$USER /var/www/html/bs23_bloodbank_api/public/
+	- sudo chown -R $USER:$USER /var/www/html/bloodbank_api/public/
 
 
 # **set up the lumen project:**
